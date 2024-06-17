@@ -118,4 +118,4 @@ public class SignUp extends AppCompatActivity {
         spinnerPosition.setAdapter(adapterPosition);
 
     }
-}}
+}
