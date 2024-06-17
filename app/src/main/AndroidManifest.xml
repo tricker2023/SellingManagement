@@ -15,6 +15,21 @@
         android:theme="@style/Theme.SellingManagement"
         tools:targetApi="31">
         <activity
+            android:name=".XemNhanVien"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChuQuanLyTinhLuong"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChuQuanLyNhanVien"
+            android:exported="false" />
+        <activity
+            android:name=".TrangChuQuanLyChamCong"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityBPNS"
+            android:exported="false" />
+        <activity
             android:name=".StatisticManagement"
             android:exported="false" />
         <activity
@@ -37,9 +52,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

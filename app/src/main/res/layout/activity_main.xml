@@ -48,4 +48,32 @@
         android:paddingVertical="@dimen/body1"
         android:fontFamily="@font/roboto_bold"/>
 
+    <Button
+        android:id="@+id/button_QLyNv"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Quản Lý Nhân Viên" />
+
+    <Button
+        android:id="@+id/button_QLyChamCong"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Quản Lý Chấm Công" />
+
+    <Button
+        android:id="@+id/button_QlyTinhLuong"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Quản Lý Tính Lương" />
+
+    <Button
+        android:id="@+id/button_DangXuat"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:text="Đăng Xuất" />
+
 </LinearLayout>
