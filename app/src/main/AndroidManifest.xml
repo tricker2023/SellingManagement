@@ -15,8 +15,6 @@
         android:theme="@style/Theme.SellingManagement"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
-<<<<<<< HEAD
             android:name=".XemNhanVien"
             android:exported="false" />
         <activity
@@ -29,8 +27,6 @@
             android:name=".TrangChuQuanLyChamCong"
             android:exported="false" />
         <activity
-            android:name=".MainActivityBPNS"
-=======
             android:name=".XoaHangTonActivity"
             android:exported="false" />
         <activity
@@ -41,7 +37,7 @@
             android:exported="false" />
         <activity
             android:name=".ThemSuaBanHangActivity"
->>>>>>> origin/M3
+
             android:exported="false" />
         <activity
             android:name=".StatisticManagement"
@@ -51,7 +47,8 @@
             android:exported="false" />
         <activity
             android:name=".DebtManagement"
-=======
+            android:exported="false"/>
+        <activity
             android:name=".XemDatHangActivity"
             android:exported="false" />
         <activity
@@ -65,18 +62,15 @@
             android:exported="false" />
         <activity
             android:name=".GiaoDienQuanLyCungUngActivity"
->>>>>>> origin/M2
             android:exported="false" />
         <activity
             android:name=".SignUp"
             android:exported="false" />
         <activity
-<<<<<<< HEAD
-=======
+
             android:name=".MainActivity"
             android:exported="false" />
         <activity
->>>>>>> origin/M2
             android:name=".Login"
             android:exported="true">
             <intent-filter>
@@ -85,15 +79,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<<<<<<< HEAD
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-<<<<<<< HEAD
-=======
->>>>>>> origin/M2
-=======
->>>>>>> origin/M3
+
     </application>
 
 </manifest>
