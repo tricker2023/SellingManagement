@@ -10,7 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     // khơi tạo biến
     private Button addDebt,debtManagement,statisticManagement,logout;
-
+    private Button btnthemsuaHTtt,btnxoaHTtt,btnthemsuaBHtt,btnxoaBHtt;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +49,38 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btnthemsuaHTtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ThemHangTonActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //xu ly click btn xoa hang ton
+        btnxoaHTtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, XoaHangTonActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // xu ly click btn them sua ban hang
+        btnthemsuaBHtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ThemSuaBanHangActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnxoaBHtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, XoaBanHangActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void Init() {
@@ -57,5 +89,9 @@ public class MainActivity extends AppCompatActivity {
         debtManagement = findViewById(R.id.main_managementDebt);
         statisticManagement = findViewById(R.id.main_managementStatistic);
         logout = findViewById(R.id.main_logOut);
+        btnthemsuaHTtt = findViewById(R.id.btnthemsuaHTtt);
+        btnxoaHTtt = findViewById(R.id.btnxoaHTtt);
+        btnthemsuaBHtt = findViewById(R.id.btnthemsuaBHtt);
+        btnxoaBHtt = findViewById(R.id.btnxoaBHtt);
     }
 }

@@ -39,6 +39,43 @@
         android:paddingVertical="@dimen/body1"
         android:fontFamily="@font/roboto_bold"/>
     <Button
+        android:id="@+id/btnthemsuaHTtt"
+        android:layout_marginTop="@dimen/body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm sửa hàng tồn"
+        android:textSize="@dimen/body1"
+        android:paddingVertical="@dimen/body1"
+        android:fontFamily="@font/roboto_bold"/>
+    <Button
+        android:id="@+id/btnxoaHTtt"
+        android:layout_marginTop="@dimen/body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa hàng tồn"
+        android:textSize="@dimen/body1"
+        android:paddingVertical="@dimen/body1"
+        android:fontFamily="@font/roboto_bold"/>
+    <Button
+        android:id="@+id/btnthemsuaBHtt"
+        android:layout_marginTop="@dimen/body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm sửa bán hàng"
+        android:textSize="@dimen/body1"
+        android:paddingVertical="@dimen/body1"
+        android:fontFamily="@font/roboto_bold"/>
+    <Button
+        android:id="@+id/btnxoaBHtt"
+        android:layout_marginTop="@dimen/body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa bán hàng"
+        android:textSize="@dimen/body1"
+        android:paddingVertical="@dimen/body1"
+        android:fontFamily="@font/roboto_bold"/>
+
+    <Button
         android:id="@+id/main_logOut"
         android:layout_marginTop="@dimen/body2"
         android:layout_width="match_parent"
@@ -47,5 +84,6 @@
         android:textSize="@dimen/body1"
         android:paddingVertical="@dimen/body1"
         android:fontFamily="@font/roboto_bold"/>
+
 
 </LinearLayout>
