@@ -6,11 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".SignUp"
     android:background="@color/background"
+<<<<<<< HEAD
     android:gravity="start"
+=======
+    android:gravity="center"
+>>>>>>> origin/M2
     android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:orientation="horizontal"
         android:layout_marginTop="@dimen/body3">
         <ImageButton
@@ -36,6 +41,10 @@
         android:orientation="vertical"
         android:paddingHorizontal="@dimen/body2"
         android:layout_marginTop="100dp">
+=======
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/body2">
+>>>>>>> origin/M2
         <TextView
             android:gravity="center"
             android:layout_width="match_parent"
@@ -50,7 +59,11 @@
             app:hintEnabled="false"
             android:layout_marginTop="@dimen/body1">
             <com.google.android.material.textfield.TextInputEditText
+<<<<<<< HEAD
                 android:id="@+id/signUp_user"
+=======
+                android:id="@+id/login_user"
+>>>>>>> origin/M2
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_view"
@@ -74,7 +87,11 @@
             app:passwordToggleEnabled="true"
             android:layout_marginTop="@dimen/body1">
             <com.google.android.material.textfield.TextInputEditText
+<<<<<<< HEAD
                 android:id="@+id/signUp_password"
+=======
+                android:id="@+id/login_password"
+>>>>>>> origin/M2
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_view"
@@ -99,7 +116,11 @@
             app:passwordToggleEnabled="true"
             android:layout_marginTop="@dimen/body1">
             <com.google.android.material.textfield.TextInputEditText
+<<<<<<< HEAD
                 android:id="@+id/signUp_ComfirmPassword"
+=======
+                android:id="@+id/login_ComfirmPassword"
+>>>>>>> origin/M2
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/background_view"
@@ -117,6 +138,7 @@
                 android:textSize="@dimen/body1"
                 android:layout_marginTop="10dp"/>
         </com.google.android.material.textfield.TextInputLayout>
+<<<<<<< HEAD
 
         <Spinner
             android:id="@+id/signUp_spinnerPosition"
@@ -129,6 +151,10 @@
             android:backgroundTint="@color/white"/>
         <Button
             android:id="@+id/signUp_button"
+=======
+        <Button
+            android:id="@+id/login_button"
+>>>>>>> origin/M2
             android:layout_marginTop="@dimen/body2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -2,6 +2,7 @@ package com.example.sellingmanagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -25,11 +26,17 @@ public class SignUp extends AppCompatActivity {
     private Spinner spinnerPosition;
     private ArrayList<String> arrayListPosition;
     private ArrayAdapter<String> adapterPosition;
+=======
+import android.os.Bundle;
+
+public class SignUp extends AppCompatActivity {
+>>>>>>> origin/M2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+<<<<<<< HEAD
         Init(); // hàm khởi tạo giá trị
         clickButtonBack(); // hàm quay trở lại trang chính
         clickButtonInsertUser(); // hàm tạo người dùng mới
@@ -114,5 +121,7 @@ public class SignUp extends AppCompatActivity {
         setArrayListPosition();
         adapterPosition = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item,arrayListPosition);
         spinnerPosition.setAdapter(adapterPosition);
+=======
+>>>>>>> origin/M2
     }
 }

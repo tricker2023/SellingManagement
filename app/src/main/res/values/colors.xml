@@ -5,7 +5,10 @@
 
     <color name="background">#FF5A3FE1</color>
     <color name="primary">#FF3314C7</color>
+<<<<<<< HEAD
     <color name="button">#FFAC9FF0</color>
+=======
+>>>>>>> origin/M2
     <color name="text">#FFECECEC</color>
 
 </resources>

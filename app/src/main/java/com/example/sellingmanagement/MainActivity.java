@@ -2,6 +2,7 @@ package com.example.sellingmanagement;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,11 +14,17 @@ public class MainActivity extends AppCompatActivity {
     private Button addDebt,debtManagement,statisticManagement,logout;
 
     Button button_QLyNv,button_QLyChamCong,button_QlyTinhLuong,button_DangXuat;
+=======
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+>>>>>>> origin/M2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+<<<<<<< HEAD
         Init(); // hàm khởi tạo giá trị
         clickButton(); // hàm xử lí sự kiện click
     }
@@ -99,5 +106,7 @@ public class MainActivity extends AppCompatActivity {
         button_QLyChamCong = findViewById(R.id.button_QLyChamCong);
         button_QlyTinhLuong = findViewById(R.id.button_QlyTinhLuong);
         button_DangXuat = findViewById(R.id.button_DangXuat);
+=======
+>>>>>>> origin/M2
     }
 }

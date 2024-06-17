@@ -19,7 +19,11 @@
             android:layout_height="wrap_content"
             android:text="Đăng nhập"
             android:textColor="@color/text"
+<<<<<<< HEAD
             android:textSize="@dimen/heading2"
+=======
+            android:textSize="@dimen/heading1"
+>>>>>>> origin/M2
             android:fontFamily="@font/roboto_bold"/>
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -71,12 +75,20 @@
                 android:layout_marginTop="10dp"/>
         </com.google.android.material.textfield.TextInputLayout>
         <Button
+<<<<<<< HEAD
             android:id="@+id/login_button"
+=======
+            android:id="@+id/btnlogin"
+>>>>>>> origin/M2
             android:layout_marginTop="@dimen/body2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Đăng nhập"
+<<<<<<< HEAD
             android:textSize="@dimen/body1"
+=======
+            android:textSize="@dimen/body4"
+>>>>>>> origin/M2
             android:paddingVertical="@dimen/body1"
             android:fontFamily="@font/roboto_bold"/>
 
@@ -93,6 +105,7 @@
                 android:textColor="@color/text"
                 android:textSize="@dimen/body1"
                 android:fontFamily="@font/roboto"/>
+<<<<<<< HEAD
             <TextView
                 android:id="@+id/login_signUp"
                 android:gravity="end"
@@ -103,6 +116,18 @@
                 android:textColor="@color/text"
                 android:textSize="@dimen/body1"
                 android:fontFamily="@font/roboto_bold"/>
+=======
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="end"
+                android:text="Đăng kí"
+                android:textColor="@color/text"
+                android:textSize="@dimen/body1" />
+>>>>>>> origin/M2
         </LinearLayout>
 
     </LinearLayout>

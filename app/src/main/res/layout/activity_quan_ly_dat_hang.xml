@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".QuanLyDatHangActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/body3">
+        <ImageButton
+            android:id="@+id/btnback"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#00000000"
+            android:paddingLeft="@dimen/body1"
+            android:paddingTop="@dimen/body4"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/arrow_left"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="QUẢN LÝ ĐẶT HÀNG"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/text"
+            android:textSize="@dimen/heading3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/body1"
+        android:textAlignment="center">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/body1"
+                android:textAlignment="center">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/body1"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/iddathang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_view"
+                        android:ems="10"
+                        android:hint="Mã đặt hàng"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:textColorHint="@color/text"
+                        android:textSize="@dimen/body1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/body1"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/idnhanviendh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_view"
+                        android:ems="10"
+                        android:hint="Mã nhân viên"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:textColorHint="@color/text"
+                        android:textSize="@dimen/body1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/body1"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/idsanphamdh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_view"
+                        android:ems="10"
+                        android:hint="Mã sản phẩm"
+                        android:inputType="text"
+                        android:maxLength="11"
+                        android:textColorHint="@color/text"
+                        android:textSize="@dimen/body1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/body1"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtdaily"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_view"
+                        android:ems="60"
+                        android:hint="Đại lý cung cấp"
+                        android:inputType="text"
+                        android:maxLength="50"
+                        android:textColorHint="@color/text"
+                        android:textSize="@dimen/body1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/body1"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtsoluongdh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_view"
+                        android:ems="60"
+                        android:hint="Số lượng"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColorHint="@color/text"
+                        android:textSize="@dimen/body1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/body1"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtdongiadh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_view"
+                        android:ems="60"
+                        android:hint="Đơn giá"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:textColorHint="@color/text"
+                        android:textSize="@dimen/body1" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/datedathang"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/body1"
+                    android:background="@drawable/background_view"
+                    android:drawableEnd="@drawable/datetime"
+                    android:text="Ngày đặt hàng"
+                    android:textSize="@dimen/body1" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="97dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnthemdh"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/body1"
+                        android:layout_marginRight="@dimen/heading2"
+                        android:layout_marginLeft="@dimen/body1"
+                        android:background="@drawable/custom_button"
+                        android:hint="Thêm"
+                        android:textAlignment="center"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="25dp"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/btnsuadh"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/body1"
+                        android:background="@drawable/custom_button"
+                        android:hint="Sửa"
+                        android:textAlignment="center"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="25dp"
+                        app:backgroundTint="@null" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="97dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnxoadh"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/body1"
+                        android:layout_marginRight="@dimen/heading2"
+                        android:layout_marginLeft="@dimen/body1"
+                        android:background="@drawable/custom_button"
+                        android:hint="Xóa"
+                        android:textAlignment="center"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="25dp"
+                        app:backgroundTint="@null" />
+
+                    <Button
+                        android:id="@+id/btntimkiemdh"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/body1"
+                        android:background="@drawable/custom_button"
+                        android:hint="Xem"
+                        android:textAlignment="center"
+                        android:textColorHint="#FFFFFF"
+                        android:textSize="25dp"
+                        app:backgroundTint="@null" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
