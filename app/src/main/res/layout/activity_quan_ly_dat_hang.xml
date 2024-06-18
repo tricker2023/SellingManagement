@@ -184,6 +184,7 @@
                     android:background="@drawable/background_view"
                     android:drawableEnd="@drawable/datetime"
                     android:text="Ngày đặt hàng"
+                    android:textColor="@color/white"
                     android:textSize="@dimen/body1" />
 
                 <LinearLayout
@@ -198,7 +199,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="@dimen/body1"
                         android:layout_marginRight="@dimen/heading2"
-                        android:layout_marginLeft="@dimen/body1"
+                        android:layout_marginLeft="@dimen/body2"
                         android:background="@drawable/custom_button"
                         android:hint="Thêm"
                         android:textAlignment="center"
@@ -233,7 +234,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="@dimen/body1"
                         android:layout_marginRight="@dimen/heading2"
-                        android:layout_marginLeft="@dimen/body1"
+                        android:layout_marginLeft="@dimen/body2"
                         android:background="@drawable/custom_button"
                         android:hint="Xóa"
                         android:textAlignment="center"

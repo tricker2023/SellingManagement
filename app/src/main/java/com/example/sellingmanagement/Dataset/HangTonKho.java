@@ -60,7 +60,7 @@ public class HangTonKho {
     public static void inserHTK(String IDHangTK, String IDSPHangTK, String SoLuongHangTK, String NgayNhapHTK) throws SQLException {
         Connection connection = SQLServerHelper.connectionSQLSever(); // tạo kết nối với sqlsever
         Statement statement = connection.createStatement(); // tạo đối tượng statement
-        String sql = "g ('" + IDHangTK + "','" + IDSPHangTK + "','" + SoLuongHangTK + "','" + NgayNhapHTK + "')";
+        String sql = "INSERT INTO HANGTONKHO(IDHANGTON,IDSANPHAM,SOLUONGHANGTON,NGAYNHAPHANGTON) VALUES('" + IDHangTK + "','" + IDSPHangTK + "','" + SoLuongHangTK + "','" + NgayNhapHTK + "')";
         Log.e("DATA", sql);
         statement.execute(sql); // thực thi câu lệnh
         statement.close(); // đóng đối tượng statement

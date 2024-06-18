@@ -111,6 +111,25 @@
                         android:textColorHint="@color/text"
                         android:textSize="@dimen/body1" />
                 </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/body1"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/idgiasanphamdgb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/background_view"
+                        android:ems="10"
+                        android:hint="Giá sản phẩm"
+                        android:inputType="text"
+                        android:maxLength="11"
+                        android:textColorHint="@color/text"
+                        android:textSize="@dimen/body1" />
+                </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -163,7 +182,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="97dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
 
                     <Button
                         android:id="@+id/btnthemdgb"
@@ -172,7 +192,7 @@
                         android:layout_gravity="center"
                         android:layout_marginTop="@dimen/body1"
                         android:layout_marginRight="@dimen/heading2"
-                        android:layout_marginLeft="@dimen/body1"
+                        android:layout_marginLeft="@dimen/body2"
                         android:background="@drawable/custom_button"
                         android:hint="Thêm"
                         android:textAlignment="center"
@@ -202,12 +222,12 @@
 
                     <Button
                         android:id="@+id/btnxoadgb"
-                        android:layout_width="140dp"
+                        android:layout_width="310dp"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/body2"
                         android:layout_marginTop="@dimen/body1"
                         android:layout_marginRight="@dimen/heading2"
-                        android:layout_marginLeft="@dimen/body1"
                         android:background="@drawable/custom_button"
                         android:hint="Xóa"
                         android:textAlignment="center"
@@ -215,18 +235,18 @@
                         android:textSize="25dp"
                         app:backgroundTint="@null" />
 
-                    <Button
-                        android:id="@+id/btntimkiemdgb"
-                        android:layout_width="140dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/body1"
-                        android:background="@drawable/custom_button"
-                        android:hint="Xem"
-                        android:textAlignment="center"
-                        android:textColorHint="#FFFFFF"
-                        android:textSize="25dp"
-                        app:backgroundTint="@null" />
+                    <!--                    <Button-->
+<!--                        android:id="@+id/btntimkiemdgb"-->
+<!--                        android:layout_width="140dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginTop="@dimen/body1"-->
+<!--                        android:background="@drawable/custom_button"-->
+<!--                        android:hint="Xem"-->
+<!--                        android:textAlignment="center"-->
+<!--                        android:textColorHint="#FFFFFF"-->
+<!--                        android:textSize="25dp"-->
+<!--                        app:backgroundTint="@null" />-->
 
 
                 </LinearLayout>

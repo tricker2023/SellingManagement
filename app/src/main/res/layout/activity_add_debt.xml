@@ -74,7 +74,7 @@
                 android:paddingHorizontal="@dimen/body3"
                 android:drawablePadding="@dimen/body3"
                 android:paddingVertical="@dimen/heading3"
-                android:hint="Tài khoản"
+                android:hint="Tên công nợ"
                 android:fontFamily="@font/roboto"
                 android:textColorHint="@color/black"
                 android:inputType="text"

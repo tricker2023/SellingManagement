@@ -15,8 +15,8 @@ import java.sql.SQLException;
 
 public class QuanLyDatGiaBanActivity extends AppCompatActivity {
     private ImageButton btnback;
-    private TextInputEditText iddatgiaban,idnhanviendgb,idsanphamdgb,edtthue,edtuudai;
-    private Button btnthemdgb,btnsuadgb,btnxoadgb,btntimkiemdgb;
+    private TextInputEditText iddatgiaban,idnhanviendgb,idsanphamdgb,edtthue,edtuudai,idgiasanphamdgb;
+    private Button btnthemdgb,btnsuadgb,btnxoadgb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,10 +40,11 @@ public class QuanLyDatGiaBanActivity extends AppCompatActivity {
                 String maDatGiaBan = iddatgiaban.getText().toString();
                 String maNhanVien = idnhanviendgb.getText().toString();
                 String maSanPham = idsanphamdgb.getText().toString();
+                String giaban = idgiasanphamdgb.getText().toString();
                 double thue = Double.parseDouble(edtthue.getText().toString());
                 String uuDai = edtuudai.getText().toString();
                 try {
-                    DatGiaBan.updateDatGiaBan(maDatGiaBan,maNhanVien,maSanPham,thue,uuDai);
+                    DatGiaBan.updateDatGiaBan(maDatGiaBan,maNhanVien,maSanPham, Double.valueOf(giaban),thue,uuDai);
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
@@ -65,10 +66,11 @@ public class QuanLyDatGiaBanActivity extends AppCompatActivity {
                 String maDatGiaBan = iddatgiaban.getText().toString();
                 String maNhanVien = idnhanviendgb.getText().toString();
                 String maSanPham = idsanphamdgb.getText().toString();
+                double giaban =  Double.parseDouble(idgiasanphamdgb.getText().toString());
                 double thue = Double.parseDouble(edtthue.getText().toString());
                 String uuDai = edtuudai.getText().toString();
                 try {
-                    DatGiaBan.insertDatGiaBan(maDatGiaBan,maNhanVien,maSanPham,thue,uuDai);
+                    DatGiaBan.insertDatGiaBan(maDatGiaBan,maNhanVien,maSanPham,giaban,thue,uuDai);
                 } catch (SQLException e) {
                     throw new RuntimeException(e);
                 }
@@ -105,7 +107,7 @@ public class QuanLyDatGiaBanActivity extends AppCompatActivity {
         btnthemdgb = findViewById(R.id.btnthemdgb);
         btnsuadgb = findViewById(R.id.btnsuadgb);
         btnxoadgb = findViewById(R.id.btnxoadgb);
-        btntimkiemdgb = findViewById(R.id.btntimkiemdgb);
+        idgiasanphamdgb = findViewById(R.id.idgiasanphamdgb);
 
     }
 }

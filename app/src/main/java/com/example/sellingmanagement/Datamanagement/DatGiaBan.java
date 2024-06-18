@@ -12,15 +12,16 @@ public class DatGiaBan {
     String idDatGiaBan;
     String idNhanVien;
     String idSanPham;
+    Double GiaSP;
     Double Thue;
     String uuDai;
 
     // tạo kết nối với csdl vào bảng DATGIABAN
-    public static void insertDatGiaBan(String idDatGiaBan, String idNhanVien, String idSanPham, Double thue, String uuDai) throws SQLException {
+    public static void insertDatGiaBan(String idDatGiaBan, String idNhanVien, String idSanPham, Double giaSP, Double thue, String uuDai) throws SQLException {
         Connection connection = SQLServerHelper.connectionSQLSever(); //Kết nối với SQL server
         Statement statement = connection.createStatement(); // Tạo đối tượng Statement
         // câu lệnh thêm dữ liệu vào sql server
-        String sql = "INSERT INTO DATGIABAN(IDDATGIABAN,MaNV,IDSANPHAM,THUE,UUDAI) VALUES ('"+idDatGiaBan+"','"+idNhanVien+"','"+idSanPham+"',"+thue+",'"+uuDai+"')";
+        String sql = "INSERT INTO DATGIABAN(IDDATGIABAN,MaNV,IDSANPHAM,GIABAN,THUE,UUDAI) VALUES ('"+idDatGiaBan+"','"+idNhanVien+"','"+idSanPham+"',"+giaSP+","+thue+",'"+uuDai+"')";
         statement.execute(sql); // thuc thi cau lenh
         statement.close(); // Dong doi tuong Statement
         connection.close(); // Dong ket noi
@@ -35,10 +36,10 @@ public class DatGiaBan {
         statement.close(); // Dong doi tuong Statement
         connection.close(); // Dong ket noi
     }
-    public static void updateDatGiaBan(String idDatGiaBan, String idNhanVien, String idSanPham, Double thue, String uuDai) throws SQLException {
+    public static void updateDatGiaBan(String idDatGiaBan, String idNhanVien, String idSanPham, Double giaSP, Double thue, String uuDai) throws SQLException {
         Connection connection = SQLServerHelper.connectionSQLSever();
         Statement statement = connection.createStatement();
-        String sql = "UPDATE DATGIABAN SET MaNV = '"+idNhanVien+"', IDSANPHAM = '"+idSanPham+"', THUE = "+thue+", UUDAI = '"+uuDai+"'" +
+        String sql = "UPDATE DATGIABAN SET MaNV = '"+idNhanVien+"', IDSANPHAM = '"+idSanPham+"', GIABAN = "+giaSP+",  THUE = "+thue+", UUDAI = '"+uuDai+"'" +
                 "WHERE IDDATGIABAN ='"+idDatGiaBan+"'";
         Log.e("DATA",sql);
         statement.execute(sql);
@@ -47,11 +48,11 @@ public class DatGiaBan {
     }
 
 
-
-    public DatGiaBan(String idDatGiaBan, String idNhanVien, String idSanPham, Double thue, String uuDai) {
+    public DatGiaBan(String idDatGiaBan, String idNhanVien, String idSanPham, Double giaSP, Double thue, String uuDai) {
         this.idDatGiaBan = idDatGiaBan;
         this.idNhanVien = idNhanVien;
         this.idSanPham = idSanPham;
+        GiaSP = giaSP;
         Thue = thue;
         this.uuDai = uuDai;
     }
@@ -95,5 +96,13 @@ public class DatGiaBan {
 
     public void setUuDai(String uuDai) {
         this.uuDai = uuDai;
+    }
+
+    public Double getGiaSP() {
+        return GiaSP;
+    }
+
+    public void setGiaSP(Double giaSP) {
+        GiaSP = giaSP;
     }
 }
