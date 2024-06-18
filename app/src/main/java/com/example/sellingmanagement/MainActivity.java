@@ -128,63 +128,64 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent myintent = new Intent(MainActivity.this, TrangChuQuanLyTinhLuong.class);
                 startActivity(myintent);
-                btnthemsuaHTtt.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(MainActivity.this, ThemHangTonActivity.class);
-                        startActivity(intent);
-                    }
-                });
 
-                //xu ly click btn xoa hang ton
-                btnxoaHTtt.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(MainActivity.this, XoaHangTonActivity.class);
-                        startActivity(intent);
-                    }
-                });
 
-                // xu ly click btn them sua ban hang
-                btnthemsuaBHtt.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(MainActivity.this, ThemSuaBanHangActivity.class);
-                        startActivity(intent);
-                    }
-                });
-                btnxoaBHtt.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intent = new Intent(MainActivity.this, XoaBanHangActivity.class);
 
-                    }
-                });
-                btnqldathang.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intentdh = new Intent(MainActivity.this,QuanLyDatHangActivity.class); // khai báo intent chuyển giao diện
-                        startActivity(intentdh); // bắt đầu chuyển sang giao diện đặt hàng
-                    }
-                });
+            }
+        });
+        btnthemsuaHTtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ThemHangTonActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //xu ly click btn xoa hang ton
+        btnxoaHTtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, XoaHangTonActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        // xu ly click btn them sua ban hang
+        btnthemsuaBHtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ThemSuaBanHangActivity.class);
+                startActivity(intent);
+            }
+        });
+        btnxoaBHtt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, XoaBanHangActivity.class);
+
+            }
+        });
+        btnqldathang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentdh = new Intent(MainActivity.this,QuanLyDatHangActivity.class); // khai báo intent chuyển giao diện
+                startActivity(intentdh); // bắt đầu chuyển sang giao diện đặt hàng
+            }
+        });
 //        // xử lý click cho button nhập hàng
-                btnqlnhaphang.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intentnh = new Intent(MainActivity.this,QuanLyNhapHangActivity.class);
-                        startActivity(intentnh);
-                    }
-                });
+        btnqlnhaphang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentnh = new Intent(MainActivity.this,QuanLyNhapHangActivity.class);
+                startActivity(intentnh);
+            }
+        });
 //        // xử lý click cho button đặt giá bán
-                btnqldatgiaban.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent intentdgb = new Intent(MainActivity.this,QuanLyDatGiaBanActivity.class); // khai báo intent chuyển giao diện
-                        startActivity(intentdgb); // bắt đầu chuyển giao diện đặt giá bán
-                    }
-                });
-
-
+        btnqldatgiaban.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentdgb = new Intent(MainActivity.this,QuanLyDatGiaBanActivity.class); // khai báo intent chuyển giao diện
+                startActivity(intentdgb); // bắt đầu chuyển giao diện đặt giá bán
             }
         });
     }
